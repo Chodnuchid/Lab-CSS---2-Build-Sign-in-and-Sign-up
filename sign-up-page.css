@@ -1,0 +1,176 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ===== Body: center  ===== */
+body {
+    background: black;
+    color: #e6edf3;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;      
+    justify-content: center;  
+
+    position: relative;
+    text-align: center;
+}
+
+/* ===== Top right link  ===== */
+.top-link {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 0.9rem;
+    color: #c9d1d9;
+}
+
+.top-link a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* ===== Wrapper ===== */
+.signup-wrapper {
+    width: 100%;
+    max-width: 420px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    text-align: center;
+}
+
+/* ===== Title ===== */
+.signup-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/* ===== Social buttons ===== */
+.btn-social {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    background: #161b22;
+    color: #e6edf3;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    transition: background-color 0.25s ease,
+                transform 0.15s ease,
+                box-shadow 0.15s ease;
+}
+
+.btn-social:hover {
+    background: #21262d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+/* ===== Divider ===== */
+.divider {
+    position: relative;
+    margin: 30px 0;
+    font-size: 0.9rem;
+    color: #8b949e;
+    width: 100%;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #30363d;
+}
+
+.divider span {
+    background: #0d1117;
+    padding: 0 12px;
+    position: relative;
+}
+
+/* ===== Form ===== */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+form label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    background: #010409;
+    color: #e6edf3;
+    margin-bottom: 18px;
+    font-size: 0.95rem;
+    text-align: center;
+
+    transition: border-color 0.25s ease,
+                box-shadow 0.25s ease,
+                transform 0.15s ease;
+}
+
+form input::placeholder {
+    color: #8b949e;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #58a6ff;
+    box-shadow: 0 0 0 3px rgba(88,166,255,0.25);
+    transform: scale(1.01);
+}
+
+/* ===== Submit ===== */
+.btn-submit {
+    width: 100%;
+    background: #238636;
+    color: #ffffff;
+    border: none;
+    padding: 13px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease,
+                transform 0.1s ease,
+                box-shadow 0.1s ease;
+}
+
+.btn-submit:hover {
+    background: #2ea043;
+    box-shadow: 0 4px 14px rgba(35,134,54,0.4);
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
